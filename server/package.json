@@ -1,0 +1,36 @@
+{
+  "name": "Turris",
+  "version": "1.0.0",
+  "description": "LoRa Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": ""
+  },
+  "keywords": [
+    "turris",
+    "project",
+    "node",
+    "express",
+    "lora"
+  ],
+  "author": "harplabs Inc.",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "coffee-script": "~1.6.3",
+    "easynexmo": "latest",
+    "express": "^4.12.3",
+    "jade": "latest",
+    "jsonwebtoken": "latest",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.7",
+    "mqtt": "^2.6.2",
+    "node-geocoder": "^3.13.0",
+    "nodemailer": "0.7.1",
+    "pug": "latest",
+    "request": "^2.81.0",
+    "sendmail": "latest"
+  },
+  "devDependencies": {}
+}
