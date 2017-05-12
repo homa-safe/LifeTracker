@@ -1,0 +1,83 @@
+<ion-view view-title="My Profile">
+          <ion-content>
+          <div class="list">
+              <ion-item style="background-color: lightgray;">
+                General
+              </ion-item>
+              <label class="item item-input">
+              <span class="input-label">Name</span>
+              <input type="text" ng-model="user.name">
+            </label>
+              <div class="item item-input item-select">
+                <div class="input-label">
+                  Gender
+                </div>
+                <select ng-model="user.gender">
+                  <option value=""></option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <label class="item item-input">
+              <span class="input-label">Age</span>
+              <input type="number" ng-model="user.age">
+            </label>
+            <div class="item item-input item-select">
+                <div class="input-label">
+                  Marriage Status
+                </div>
+                <select ng-model="user.marriageStatus">
+                  <option value=""></option>
+                  <option value="single">Single</option>
+                  <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                </select>
+              </div>
+              <label class="item item-input">
+              <span class="input-label">Occupancy</span>
+              <input type="text" ng-model="user.occupancy">
+            </label>
+              <label class="item item-input">
+              <span class="input-label">Diseases</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="user.diseases">
+                </textarea>
+            </label>
+              
+              <label class="item item-input">
+              <span class="input-label">Allergies</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="user.allergies">
+                </textarea>
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Special Care</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="user.specialCare">
+                </textarea>
+            </label>
+              <label class="item item-input">
+              <span class="input-label">Doctors</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="user.doctors">
+                </textarea>
+            </label>
+              <ion-item style="background-color: lightgray;">
+                Emergency Contact
+              </ion-item>
+              <label class="item item-input">
+              <span class="input-label">Relation</span>
+              <input type="text" ng-model="user.emergencyRelation">
+            </label>
+              <label class="item item-input">
+              <span class="input-label">Name</span>
+              <input type="text" ng-model="user.emergencyName">
+            </label>
+              <label class="item item-input">
+              <span class="input-label">Phone</span>
+              <input type="tel" ng-model="user.emergencyPhone">
+            </label>
+              </div>
+          <div class="padding">
+            <button class="button button-block button-positive" ng-click="updateProfile(user)">
+              Save
+            </button>
+            </div>
+        </ion-content>
+      </ion-view>

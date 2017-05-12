@@ -1,0 +1,15 @@
+<ion-view cache-view="false" view-title="My Forms">
+        <ion-content padding="true">
+          <ion-list>
+              <ion-item item="item"
+                  ng-click="openForm({{todayId}})">
+                  Today - {{today}}
+              </ion-item>
+            <ion-item ng-repeat="item in items" 
+                  item="item"
+                  ng-click="openForm(item._id)">
+          {{ item.dateFormatted }}
+              </ion-item>
+            </ion-list>
+        </ion-content>
+      </ion-view>

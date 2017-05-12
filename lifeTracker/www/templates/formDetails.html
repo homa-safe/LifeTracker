@@ -1,0 +1,131 @@
+<ion-view view-title="Form Details">
+          <ion-content>
+              <h4 style="text-align: center; color: gray;">{{form.date}}</h4>
+            <div class="list">
+              <label class="item item-input">
+              <span class="input-label">Hours of Sleep</span>
+              <input type="text" ng-model="form.sleep">
+            </label>
+                
+            <ion-item style="background-color: lightgray;">
+                Breakfast
+            </ion-item>
+             <label class="item item-input">
+              <span class="input-label">Meal</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.breakfastMeal">
+                </textarea>
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Drink</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.breakfastDrink">
+                </textarea>
+            </label>   
+            <ion-item style="background-color: lightgray;">
+            </ion-item>
+                
+            <label class="item item-input">
+              <span class="input-label">Snack1</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.snack1">
+                </textarea>
+            </label> 
+                
+            <ion-item style="background-color: lightgray;">
+                Lunch
+            </ion-item>
+             <label class="item item-input">
+              <span class="input-label">Meal</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.lunchMeal">
+                </textarea>
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Drink</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.lunchDrink">
+                </textarea>
+            </label>   
+            <ion-item style="background-color: lightgray;">
+            </ion-item>
+                
+            <label class="item item-input">
+              <span class="input-label">Snack2</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.snack2">
+                </textarea>
+            </label> 
+                
+            <ion-item style="background-color: lightgray;">
+                Dinner
+            </ion-item>
+             <label class="item item-input">
+              <span class="input-label">Meal</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.dinnerMeal">
+                </textarea>
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Drink</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.dinnerDrink">
+                </textarea>
+            </label>   
+            <ion-item style="background-color: lightgray;">
+            </ion-item>
+                
+            <label class="item item-input">
+              <span class="input-label">Snack3</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.snack3">
+                </textarea>
+            </label> 
+                
+            <label class="item item-input">
+              <span class="input-label">supplementary</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.supplementary">
+                </textarea>
+            </label> 
+                
+            <label class="item item-input">
+              <span class="input-label">Glasses of Water</span>
+              <input type="text" ng-model="form.water">
+            </label>
+                
+            <ion-item style="background-color: lightgray;">
+                Exercise
+            </ion-item>
+             <label class="item item-input">
+              <span class="input-label">Duration</span>
+              <input type="text" ng-model="form.exerciseDuration">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Explanation</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.exerciseExplanation">
+                </textarea>
+            </label>   
+            <ion-item style="background-color: lightgray;">
+            </ion-item>
+                
+            <label class="item item-input">
+              <span class="input-label">Day Mood</span>
+              <input type="text" ng-model="form.dayMood">
+            </label>
+                
+                <label class="item item-input">
+              <span class="input-label">Unusual Feeling</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.unusualFeeling">
+                </textarea>
+            </label>
+                
+            <label class="item item-input">
+              <span class="input-label">Sickness</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.sickness">
+                </textarea>
+            </label>
+                
+            <label class="item item-input">
+              <span class="input-label">Comments</span>
+              <textarea style="width: 66%; height: 100px; margin: auto; border: solid 1px #FFF;" ng-model="form.comments">
+                </textarea>
+            </label>
+              </div>
+          <div class="padding">
+            <button class="button button-block button-positive" ng-click="updateForm(form)">
+              Save
+            </button>
+            </div>
+        </ion-content>
+      </ion-view>
